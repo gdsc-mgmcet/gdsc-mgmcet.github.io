@@ -25,7 +25,7 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/event" element={<EventPage />} />
           <Route path="/event/cloud" element={<Cloud />} />
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/*" element={<Page404 />} />
         </Routes>
       </AnimatePresence>

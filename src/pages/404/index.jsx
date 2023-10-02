@@ -12,7 +12,6 @@ function Page404() {
     <Container>
       {" "}
       {/* Main container */}
-      <h1>Hello from Aryan</h1>
       <DinosaurImage src={DinosaurGif} alt="DinosaurGif" />
       <H1>{Page404Line1}</H1> {/* Main heading */}
       <Span>{Page404Line2}</Span> {/* Subtitle */}
