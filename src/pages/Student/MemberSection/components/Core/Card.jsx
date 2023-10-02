@@ -160,9 +160,9 @@ const CardBack = styled.div`
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  /* background: linear-gradient(45deg, white 0%, ${(props) =>
+  background: linear-gradient(45deg, white 0%, ${(props) =>
     props.bgColor} 50%, white 100%); 
-  ${gradientBackground} */
+  ${gradientBackground}
 
   /*  */
   transform: rotateY(0deg);
