@@ -1,20 +1,28 @@
-import DinosaurGif from '../../assets/images/notsensible.gif';  // Import the DinosaurGif image
-import { Link } from 'react-router-dom';  // Import the Link component from 'react-router-dom'
-import styled from 'styled-components';  // Import the styled-components library
-import { Page404Line1, Page404Line2, Page404Line3 } from '../../constants/constants';
+import DinosaurGif from "../../assets/images/notsensible.gif"; // Import the DinosaurGif image
+import { Link } from "react-router-dom"; // Import the Link component from 'react-router-dom'
+import styled from "styled-components"; // Import the styled-components library
+import {
+  Page404Line1,
+  Page404Line2,
+  Page404Line3,
+} from "../../constants/constants";
 
 function Page404() {
   return (
-    <Container>  {/* Main container */}
+    <Container>
+      {" "}
+      {/* Main container */}
+      <h1>Hello from Aryan</h1>
       <DinosaurImage src={DinosaurGif} alt="DinosaurGif" />
-      <H1>{Page404Line1}</H1>  {/* Main heading */}
-      <Span>{Page404Line2}</Span>  {/* Subtitle */}
-      <BackToMain to={'/'}>{Page404Line3}</BackToMain>  {/* Link to the main page */}
+      <H1>{Page404Line1}</H1> {/* Main heading */}
+      <Span>{Page404Line2}</Span> {/* Subtitle */}
+      <BackToMain to={"/"}>{Page404Line3}</BackToMain>{" "}
+      {/* Link to the main page */}
     </Container>
   );
 }
 
-export default Page404;  // Export the Page404 component
+export default Page404; // Export the Page404 component
 
 // Styled components for styling
 
@@ -29,7 +37,7 @@ const Container = styled.div`
 
   position: relative;
 
-  font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
   background-color: ${(props) => props.theme.backgroundColor.white};
 
   ${({ theme }) => theme.tablet`
@@ -89,4 +97,3 @@ const BackToMain = styled(Link)`
     padding: 12px 24px;
   `}
 `;
-
