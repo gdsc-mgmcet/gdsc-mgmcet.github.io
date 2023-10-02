@@ -1,6 +1,7 @@
 import React, { useCallback, useContext, useState } from "react";
 import styled, { css } from "styled-components";
 import { MouseContext } from "../../../../../context/MouseContext";
+import { theme } from "../../../../../styles/global-theme";
 
 function TeamCard({
   key,
@@ -108,8 +109,11 @@ const CardSide = styled.div`
   justify-content: center;
   align-items: center;
 
+  /*  */
+  /* transform: rotateY(180deg); */
   &.flipped {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+    transform: rotateY(0deg);
     ${({ theme }) => theme.mobile`
     transform: rotateY(0deg);
   `}
@@ -131,6 +135,9 @@ const CardFront = styled.div`
   background: #666666;
   z-index: 2;
   color: white;
+
+  /*  */
+  opacity: 0;
   ${({ theme }) => theme.mobile`
       opacity: 0;
   `}
@@ -165,9 +172,16 @@ const CardBack = styled.div`
   // background-color: ${(props) => props.bgColor};
   ${gradientBackground}
 
+  /*  */
+  transform: rotateY(0deg);
+  border: 5px solid ${theme.color.darkgrey};
+    border-radius: 10px;
+    text-align: center;
   ${({ theme }) => theme.mobile`
   transform: rotateY(0deg);
-  border: 5px solid #666666;
+  border: 5px solid #121212;
+    border-radius: 10px;
+    text-align: center;
   `}
 `;
 

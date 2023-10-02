@@ -1,47 +1,48 @@
-import React, { useCallback, useContext } from 'react';
-import { styled } from 'styled-components';
-import { MouseContext } from '../../../../../context/MouseContext';
-import { LeadData } from '../../../../../constants/Team/data';
-
+import React, { useCallback, useContext } from "react";
+import { styled } from "styled-components";
+import { MouseContext } from "../../../../../context/MouseContext";
+import { LeadData } from "../../../../../constants/Team/data";
+import { theme } from "../../../../../styles/global-theme";
 
 function Lead() {
   const { cursorChangeHandler } = useContext(MouseContext);
 
   const cursorChangeLinkedInHandler = useCallback(() => {
-    cursorChangeHandler('LinkedIn');
+    cursorChangeHandler("LinkedIn");
   }, [cursorChangeHandler]);
 
   const cursorChangeEmptyHandler = useCallback(() => {
-    cursorChangeHandler('');
+    cursorChangeHandler("");
   }, [cursorChangeHandler]);
 
   return (
     <Container data-scroll>
       <TopSection>
         <TextSection data-scroll data-scroll-speed="-1.5">
-          GDSC <br />LEAD 2023-24 MGMCET
+          GDSC <br />
+          LEAD 2023-24 MGMCET
         </TextSection>
       </TopSection>
 
       {LeadData.map((lead, idx) => (
         <ImageSection key={idx}>
-          <a href={lead.linkedin} target='__blank'>
-          <Photograph
-            onMouseEnter={cursorChangeLinkedInHandler}
-            onMouseLeave={cursorChangeEmptyHandler}
+          <a href={lead.linkedin} target="__blank">
+            <Photograph
+              onMouseEnter={cursorChangeLinkedInHandler}
+              onMouseLeave={cursorChangeEmptyHandler}
             >
-            <NameSection>{lead.name}</NameSection>
-            <TiltedImage
-              src={`/assets/Profile/${lead.profile}`}
-              alt="Lead's Image"
+              
+              <TiltedImage
+                src={`/assets/Profile/${lead.profile}`}
+                alt="Lead's Image"
               />
-          </Photograph>
+              <NameSection>{lead.name}</NameSection>
+            </Photograph>
           </a>
-          <LeftTiltedCard color="blue" />
-          <RightTiltedCard color="red" />
+          <LeftTiltedCard color={theme.color.green} />
+          <RightTiltedCard color={theme.color.yellow} />
         </ImageSection>
       ))}
-
     </Container>
   );
 }
@@ -75,7 +76,13 @@ const TextSection = styled.div`
   justify-content: center;
   align-items: center;
   width: 70%;
+  color: #181818;
   cursor: pointer;
+  ${({ theme }) => theme.mobile`
+    width: 95%;
+    font-size: 50px;
+    // font-weight: bold;
+  `}
 `;
 
 const ImageSection = styled.div`
@@ -91,12 +98,18 @@ const ImageSection = styled.div`
 const Photograph = styled.div`
   height: 450px;
   width: 350px;
-  background-color: #EA4435;
+  
+  background-color: #ea4435;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   color: white;
 
   ${({ theme }) => theme.mobile`
@@ -106,23 +119,25 @@ const Photograph = styled.div`
 `;
 
 const NameSection = styled.div`
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 
   ${({ theme }) => theme.mobile`
-    font-size: 20px;
+    font-size: 26px;
   `}
 `;
 
 const TiltedImage = styled.img`
   width: 90%;
-  height: 90%;
+  /* height: 90%; */
   object-fit: cover;
   // border: 5px solid #4285F4;
-  border-radius: 10px;
+  border-radius: 7px;
   // transform: rotate(3deg);
   object-fit: contain;
+
+  /* border-radius: 100%; */
 `;
 
 const TiltedCardBase = styled.div`
@@ -151,8 +166,8 @@ const LeftTiltedCard = styled(TiltedCardBase)`
   padding: 20px;
   border-radius: 10px;
   position: absolute;
-  display: inline-block; 
-  background-color: #34A853;
+  display: inline-block;
+  background-color: ${props=> props.color};
   transform: translateX(0) translateY(-50%) rotate(-4deg);
   ${({ theme }) => theme.mobile`
     height: 400px;
@@ -167,8 +182,8 @@ const RightTiltedCard = styled(TiltedCardBase)`
   padding: 20px;
   border-radius: 10px;
   position: absolute;
-  display: inline-block; 
-  background-color: #FBBC05;
+  display: inline-block;
+  background-color: ${props=> props.color};
   transform: translateX(0) translateY(-50%) rotate(5deg);
   ${({ theme }) => theme.mobile`
     height: 400px;

@@ -1,6 +1,7 @@
 import React, { useCallback, useContext, useState } from "react";
 import styled, { css } from "styled-components";
 import { MouseContext } from "../../../../../context/MouseContext";
+import { theme } from "../../../../../styles/global-theme";
 
 function Card({ key, name, department, profile, position, gender, linkedin }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -59,7 +60,9 @@ function Card({ key, name, department, profile, position, gender, linkedin }) {
                   src={
                     profile !== ""
                       ? `/assets/Profile/${profile}`
-                      : gender === "He" ? "/assets/Profile/male.png" : "/assets/Profile/female.png"
+                      : gender === "He"
+                      ? "/assets/Profile/male.png"
+                      : "/assets/Profile/female.png"
                   }
                   alt="Profile"
                 />
@@ -100,7 +103,8 @@ const CardSide = styled.div`
   align-items: center;
 
   &.flipped {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+    transform: rotateY(0deg);
     ${({ theme }) => theme.mobile`
     transform: rotateY(0deg);
   `}
@@ -123,6 +127,8 @@ const CardFront = styled.div`
   z-index: 2;
   color: white;
 
+  /*  */
+  opacity: 0;
   ${({ theme }) => theme.mobile`
     opacity: 0;
   `}
@@ -158,9 +164,17 @@ const CardBack = styled.div`
     props.bgColor} 50%, white 100%); 
   ${gradientBackground} */
 
+  /*  */
+  transform: rotateY(0deg);
+  border: 5px solid ${theme.color.darkgrey};
+  border-radius: 10px;
+  text-align: center;
+
   ${({ theme }) => theme.mobile`
     transform: rotateY(0deg);
-    border: 5px solid #666666;
+    border: 5px solid #181818;
+    border-radius: 10px;
+    text-align: center;
   `}
 `;
 

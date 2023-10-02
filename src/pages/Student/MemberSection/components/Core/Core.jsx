@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import Card from "./Card";
 import { ReactComponent as ChromeIcon } from "../../../../../assets/images/icons/chrome.svg";
 import { CoreTeamData } from "../../../../../constants/Team/data";
+import { theme } from "../../../../../styles/global-theme";
 
 const cardData = [
   { id: 1, text: "Card 1" },
@@ -22,39 +23,24 @@ function Core() {
     <Container data-scroll>
       <TopSection>
         <BackgroundCore>
-          <Letter color="#ea443560">C</Letter>
-          <Letter color="#4285f460">O</Letter>
-          <Letter color="#34a85360">R</Letter>
-          <Letter color="#fbbc0560">E</Letter>
+          <Letter color={theme.color.red+60}>C</Letter>
+          <Letter color={theme.color.blue+60}>O</Letter>
+          <Letter color={theme.color.green+60}>R</Letter>
+          <Letter color={theme.color.yellow+60}>E</Letter>
         </BackgroundCore>
         <LetterContainer data-scroll data-scroll-speed="6">
-          <LetterC color="#EA4435"> C </LetterC>
+          <LetterC color={theme.color.red}> C </LetterC>
         </LetterContainer>
         <LetterContainer data-scroll data-scroll-speed="6">
-          <LetterO color="#4285F4"> O </LetterO>
+          <LetterO color={theme.color.blue}> O </LetterO>
         </LetterContainer>
         <LetterContainer data-scroll data-scroll-speed="6">
-          <LetterR color="#34A853"> R </LetterR>
+          <LetterR color={theme.color.green}> R </LetterR>
         </LetterContainer>
         <LetterContainer data-scroll data-scroll-speed="6">
-          <LetterE color="#FBBC05"> E </LetterE>
+          <LetterE color={theme.color.yellow}> E </LetterE>
         </LetterContainer>
       </TopSection>
-
-      {/* <TopSection>
-        <LetterContainer data-scroll data-scroll-speed="12">
-          <LetterC color="red"> C </LetterC>
-        </LetterContainer>
-         <LetterContainer data-scroll data-scroll-speed="12">
-          <LetterO color="blue"> O </LetterO>
-        </LetterContainer>
-        <LetterContainer data-scroll data-scroll-speed="12">
-          <LetterR color="green"> R </LetterR>
-        </LetterContainer>
-        <LetterContainer data-scroll data-scroll-speed="12">
-          <LetterE color="yellow"> E </LetterE>
-        </LetterContainer>
-      </TopSection> */}
       <BottomSection>
         <CardGrid>
           {CoreTeamData.map((core, idx) => (
