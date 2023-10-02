@@ -1,7 +1,7 @@
 {
   "homepage" : "https://gdsc-mgmcet.github.io/",
   "name": "gdsc-mgmcet",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
