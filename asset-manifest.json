@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.26475bcc.css",
-    "main.js": "/static/js/main.6797bc44.js",
+    "main.js": "/static/js/main.19defbdb.js",
     "static/css/406.7091ee4b.chunk.css": "/static/css/406.7091ee4b.chunk.css",
-    "static/js/406.fa16d5ac.chunk.js": "/static/js/406.fa16d5ac.chunk.js",
+    "static/js/406.47f990a1.chunk.js": "/static/js/406.47f990a1.chunk.js",
     "static/js/7.f6d1a727.chunk.js": "/static/js/7.f6d1a727.chunk.js",
     "static/media/comming-soon.png": "/static/media/comming-soon.000f22257de280537c27.png",
     "static/media/notsensible.gif": "/static/media/notsensible.11c3b79126c7323e10e8.gif",
@@ -53,13 +53,13 @@
     "static/media/tensorflow.svg": "/static/media/tensorflow.2c1801bb18ea8780cb4a759879fe54ce.svg",
     "static/media/flutter.svg": "/static/media/flutter.799390e896410bb1fbfe56c03371bfaa.svg",
     "main.26475bcc.css.map": "/static/css/main.26475bcc.css.map",
-    "main.6797bc44.js.map": "/static/js/main.6797bc44.js.map",
+    "main.19defbdb.js.map": "/static/js/main.19defbdb.js.map",
     "406.7091ee4b.chunk.css.map": "/static/css/406.7091ee4b.chunk.css.map",
-    "406.fa16d5ac.chunk.js.map": "/static/js/406.fa16d5ac.chunk.js.map",
+    "406.47f990a1.chunk.js.map": "/static/js/406.47f990a1.chunk.js.map",
     "7.f6d1a727.chunk.js.map": "/static/js/7.f6d1a727.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26475bcc.css",
-    "static/js/main.6797bc44.js"
+    "static/js/main.19defbdb.js"
   ]
 }
