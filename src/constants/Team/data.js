@@ -182,7 +182,7 @@ export const Teams = [
         name: 'Deepak Kamble',
         department: 'App',
         position: 'Team',
-        profile: 'DeepakKamble.jpg',
+        profile: 'DeepakKamble.jpeg',
         gender: 'He',
         linkedin: 'https://www.linkedin.com/in/deepak-kamble-21139325b',
     },
