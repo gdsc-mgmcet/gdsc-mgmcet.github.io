@@ -47,11 +47,14 @@ export default Team;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 600vh; /* Total height of 300vh */
+  height: 550vh;
   width: 100vw;
   /* //   ${({ theme }) => theme.tablet`
 //   height: 600vh;
 // `} */
+${({ theme }) => theme.mobile`
+    height: 650vh;
+`}
 `;
 
 const TopSection = styled.div`
