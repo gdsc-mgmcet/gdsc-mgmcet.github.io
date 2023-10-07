@@ -14,7 +14,7 @@ You can connect with us on social media platforms:
 This project was developed by:
 
 - [Himanshu Bhoir](https://github.com/HimanshuBhoir) (Lead Developer) (Project Head Web)
-- [Aryan Nipane](https://github.com/aaryannipane) (Supporting Developer) (Co-Head Web)
+- [Aryan Nipane](https://github.com/aaryannipane) (Support Developer) (Co-Head Web)
 
 ## Website
 
