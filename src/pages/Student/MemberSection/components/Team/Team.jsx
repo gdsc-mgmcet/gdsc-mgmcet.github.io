@@ -65,18 +65,21 @@ const TopSection = styled.div`
   font-size: 70px;
   text-align: center;
   padding: 50px;
+  height: 50vh;
 
   ${({ theme }) => theme.tablet`
     font-size: 30px;
+    flex: 0.2;
   `}
 
   ${({ theme }) => theme.mobile`
     font-size: 20px;
+    flex: 0.2;
   `}
 `;
 
 const BottomSection = styled.div`
-  flex: 2; /* Take up the next 200vh */
+  flex: 2.5;
   display: flex;
   justify-content: center;
   /* align-items: center; */
