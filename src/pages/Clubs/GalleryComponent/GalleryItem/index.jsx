@@ -21,7 +21,7 @@ function GalleryItem({ item, index, onFocus, visible }) {
     >
       <WriteupWrapper>
         <IndexSpan data-scroll data-scroll-speed="1.5">
-          0{index + 1}
+          {/* 0{index + 1} */}
         </IndexSpan>
         <DescriptionSpan data-scroll data-scroll-speed="2.5">
           {item.short}

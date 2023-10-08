@@ -34,7 +34,7 @@ function GalleryComponent() {
               <GalleryItem
                 key={item.id}
                 item={item}
-                index={idx}
+                // index={idx}
                 visible={isVisible}
                 onFocus={() => setFocusedSectionId(item.id)}
               />

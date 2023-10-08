@@ -26,8 +26,8 @@ export const SubHeaderLine = "GDSC MGMCET 2023-24";
 
 // Links
 
-export const LinkedInGDSCMGMCET = "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/";
-export const GithubGDSCMGMCET = "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/";
+export const LinkedInGDSCMGMCET = "https://www.linkedin.com/company/gdsc-mgm/";
+export const GithubGDSCMGMCET = "https://github.com/gdsc-mgmcet";
 export const InstagramGDSCMGMCET = "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/";
 export const GmailGDSCMGMCET = "himanshubhoir25@gmail.com";
 export const CommunityPageGDSCMGMCET = "https://gdsc.community.dev/mgms-college-of-engineering-and-technology-navi-mumbai/";

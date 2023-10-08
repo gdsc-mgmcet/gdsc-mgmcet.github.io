@@ -1,4 +1,3 @@
-const defaultLinkedIn = 'https://www.linkedin.com/company/gdsc-mgm/';
 
 export const LeadData = [
     {
@@ -187,15 +186,6 @@ export const Teams = [
         linkedin: 'https://www.linkedin.com/in/deepak-kamble-21139325b',
     },
     {
-        id: '8',
-        name: 'Raj Ghonge',
-        department: 'Media',
-        position: 'Team',
-        profile: 'RajGhonge.jpg',
-        gender: 'He',
-        linkedin: 'https://www.linkedin.com/in/raj-ghonge-77b87b28a/',
-    },
-    {
         id: '9',
         name: 'Om Gharat',
         department: 'Media',
@@ -203,6 +193,15 @@ export const Teams = [
         profile: 'OmGharat.jpeg',
         gender: 'He',
         linkedin: 'https://www.linkedin.com/in/om-gharat-a82aa31b0',
+    },
+    {
+        id: '8',
+        name: 'Raj Ghonge',
+        department: 'Media',
+        position: 'Team',
+        profile: 'RajGhonge.jpg',
+        gender: 'He',
+        linkedin: 'https://www.linkedin.com/in/raj-ghonge-77b87b28a/',
     },
     {
         id: '12',
