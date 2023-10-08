@@ -31,3 +31,8 @@ export const GithubGDSCMGMCET = "https://www.linkedin.com/in/himanshu-bhoir-34a9
 export const InstagramGDSCMGMCET = "https://www.linkedin.com/in/himanshu-bhoir-34a9a01b9/";
 export const GmailGDSCMGMCET = "himanshubhoir25@gmail.com";
 export const CommunityPageGDSCMGMCET = "https://gdsc.community.dev/mgms-college-of-engineering-and-technology-navi-mumbai/";
+
+// About Page
+
+export const GDSCCOORDINATOR = 'Swati Sinha';
+export const GDSCCOORDINATORCONNECT = 'https://www.linkedin.com/in/swati-sinha-8364956/';

@@ -2,6 +2,7 @@ import { useLocomotiveScrollPosition, useWindowSize } from '../../../hooks';
 import styled from 'styled-components';
 
 import { BackgroundVideo, GoBackArrow, SearchBar } from '../components';
+import { GDSCCOORDINATOR, GDSCCOORDINATORCONNECT } from '../../../constants/constants';
 
 function Hero() {
   const scrollPos = useLocomotiveScrollPosition(10, false);
@@ -12,18 +13,25 @@ function Hero() {
       <MainWrapper data-scroll data-scroll-sticky data-scroll-target="#aboutus-container">
         <TextSection>
           <MainSpan blur={scrollPos / 40} opacity={Math.max(1 - scrollPos / height, 0)}>
-            Want to know us ?
+            Want to know us?
           </MainSpan>
           <SearchBar translateZ={scrollPos / 6} />
-          
         </TextSection>
       </MainWrapper>
       <TextWrapper>
         <H1>Welcome to GDSC MGMCET!</H1>
         <P>
-        Ignite Your Tech Passion with MGM CET's GDSC Chapter! Join our pixel-powered party, where bugs are just disco lights and code is the dance floor. Let's geek out, create wonders, and sprinkle a little coding stardust together! 🎉 Let's turn bugs into features and errors into laughter – welcome to MGM CET's GDSC Chapter.👾
+          Ignite Your Tech Passion with <a href="https://gdsc.community.dev/mgms-college-of-engineering-and-technology-navi-mumbai/" target="_blank"><BLUE>MGM CET's GDSC Chapter!</BLUE></a>  Join our pixel-powered party, where bugs are just disco lights and code is the dance floor. Let's geek out, create wonders, and sprinkle a little coding stardust together! 🎉 Let's turn bugs into features and errors into laughter – welcome to MGM CET's GDSC Chapter.👾
         </P>
       </TextWrapper>
+      <TextWrapper2>
+        <H1>Expressing Gratitude</H1>
+        <P>
+          • Our heartfelt gratitude to <a href={GDSCCOORDINATORCONNECT} target="_blank"><BLUE>{GDSCCOORDINATOR}</BLUE></a> Ma'am, Our GDSC Coordinator, for her invaluable support, guidance, and motivation.
+          <br />
+          • Our sincere thanks to <a href="https://github.com/gdsc-ys" target="_blank"><BLUE>GDSC-YS</BLUE></a> for their valuable guidance in our portfolio.
+        </P>
+      </TextWrapper2>
       <BackgroundVideo />
       <GoBackArrow />
     </Container>
@@ -34,7 +42,7 @@ export default Hero;
 
 const Container = styled.div`
   width: 100vw;
-  height: 450vh;
+  height: auto; /* Adjust as needed based on your content */
 
   background-color: ${(props) => props.theme.backgroundColor.black};
 
@@ -148,6 +156,38 @@ const TextWrapper = styled.main`
   `}
 `;
 
+const TextWrapper2 = styled.main`
+  width: 80vw;
+  height: auto; /* Adjust as needed based on your content */
+
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+  margin-left: 10vw;
+  padding: 3%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5vh;
+
+  position: relative;
+  z-index: 10;
+
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  border-radius: 32px;
+
+  ${({ theme }) => theme.tablet`
+    height: auto; /* Adjust as needed based on your content */
+  `}
+  
+  ${({ theme }) => theme.mobile`
+    height: auto; /* Adjust as needed based on your content */
+  `}
+`;
+
 const H1 = styled.h1`
   font-size: 72px;
   color: ${(props) => props.theme.backgroundColor.white};
@@ -167,3 +207,8 @@ const P = styled.p`
     font-size: 16px;
   `}
 `;
+
+const BLUE= styled.span`
+  color: #4285F4;
+  cursor: pointer;
+`;  
