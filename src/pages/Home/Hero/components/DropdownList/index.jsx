@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 import styled from 'styled-components';
 
 import DropdownMenu from '../DropdownMenu';
-import { GithubGDSCMGMCET, InstagramGDSCMGMCET, LinkedInGDSCMGMCET } from '../../../../../constants/constants';
+import { GDSCDISCORD, GithubGDSCMGMCET, InstagramGDSCMGMCET, LinkedInGDSCMGMCET } from '../../../../../constants/constants';
 
 function DropdownList() {
   return (
@@ -25,7 +25,7 @@ function DropdownList() {
         <DropdownMenu
           Icon={<Discord />}
           description={'Discord'}
-          href={InstagramGDSCMGMCET}
+          href={GDSCDISCORD}
         />
         <DropdownMenu
           Icon={<Instagram />}
