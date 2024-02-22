@@ -29,7 +29,7 @@ export const SubHeaderLine = "GDSC MGMCET 2023-24";
 export const LinkedInGDSCMGMCET = "https://www.linkedin.com/company/gdsc-mgm/";
 export const GithubGDSCMGMCET = "https://github.com/gdsc-mgmcet";
 export const InstagramGDSCMGMCET = "https://instagram.com/gdsc.mgmcet?igshid=MzRlODBiNWFlZA==";
-export const GmailGDSCMGMCET = "himanshubhoir25@gmail.com";
+export const GmailGDSCMGMCET = "gdsc.mgmcet@gmail.com";
 export const CommunityPageGDSCMGMCET = "https://gdsc.community.dev/mgms-college-of-engineering-and-technology-navi-mumbai/";
 export const GDSCDISCORD = "https://discord.gg/Beqawmx4V3";
 
