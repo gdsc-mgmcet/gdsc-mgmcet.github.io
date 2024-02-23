@@ -34,7 +34,7 @@ function Slide({ content, index, onFocus, activeIndex, URL }) {
               content.active ? (
                 <JoinButton1><a href={content.eventURL[0]} target="__blank">Join Us</a></JoinButton1>
                 ):(
-                  <a href={content.eventURL[0]} target="__blank">< JoinButton1> Check me </JoinButton1></a>
+                  <a href={content.eventURL[0]} target="__blank">< JoinButton1> Check out! </JoinButton1></a>
               )
             }
         </ContentWrapper1>
@@ -239,7 +239,7 @@ const ImageBackground1 = styled.div`
   width: 250px; /* Increase image size */
   height: 250px; /* Increase image size */
   border-radius: 7px; /* Make image round */
-  background-color: ${(props) => props.theme.backgroundColor.white};
+  background-color: ${(props) => props.theme.backgroundColor.black};
   overflow: hidden; /* Hide overflow if image is larger */
 `;
 
