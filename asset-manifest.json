@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.26475bcc.css",
-    "main.js": "/static/js/main.91c936dc.js",
+    "main.js": "/static/js/main.07ead2fa.js",
     "static/css/406.7091ee4b.chunk.css": "/static/css/406.7091ee4b.chunk.css",
-    "static/js/406.35b63b64.chunk.js": "/static/js/406.35b63b64.chunk.js",
+    "static/js/406.a2f6a544.chunk.js": "/static/js/406.a2f6a544.chunk.js",
     "static/js/7.f6d1a727.chunk.js": "/static/js/7.f6d1a727.chunk.js",
+    "static/media/remote-jobs2.png": "/static/media/remote-jobs2.c4fafbf52e5a5a082567.png",
     "static/media/comming-soon.png": "/static/media/comming-soon.000f22257de280537c27.png",
     "static/media/notsensible.gif": "/static/media/notsensible.11c3b79126c7323e10e8.gif",
     "static/media/Roboto-BlackItalic.ttf": "/static/media/Roboto-BlackItalic.fd62a10743bd89a3d97c.ttf",
@@ -29,6 +30,7 @@
     "static/media/PPNeueMontreal-Bold.otf": "/static/media/PPNeueMontreal-Bold.a5585efb70f888db7b5c.otf",
     "static/media/PPNeueMontreal-Book.otf": "/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
     "static/media/PPNeueMontreal-Thin.otf": "/static/media/PPNeueMontreal-Thin.79ab813ef18c7e673de5.otf",
+    "static/media/solution-challenge.png": "/static/media/solution-challenge.482875cf27bf5c0a45e1.png",
     "static/media/Orientation.webp": "/static/media/Orientation.83c9cc67362ecd28e50f.webp",
     "static/media/instagram.svg": "/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/styledcomponents.svg": "/static/media/styledcomponents.cd1aef9abdc7ee8bc7d755a201ef05fb.svg",
@@ -53,13 +55,13 @@
     "static/media/tensorflow.svg": "/static/media/tensorflow.2c1801bb18ea8780cb4a759879fe54ce.svg",
     "static/media/flutter.svg": "/static/media/flutter.799390e896410bb1fbfe56c03371bfaa.svg",
     "main.26475bcc.css.map": "/static/css/main.26475bcc.css.map",
-    "main.91c936dc.js.map": "/static/js/main.91c936dc.js.map",
+    "main.07ead2fa.js.map": "/static/js/main.07ead2fa.js.map",
     "406.7091ee4b.chunk.css.map": "/static/css/406.7091ee4b.chunk.css.map",
-    "406.35b63b64.chunk.js.map": "/static/js/406.35b63b64.chunk.js.map",
+    "406.a2f6a544.chunk.js.map": "/static/js/406.a2f6a544.chunk.js.map",
     "7.f6d1a727.chunk.js.map": "/static/js/7.f6d1a727.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26475bcc.css",
-    "static/js/main.91c936dc.js"
+    "static/js/main.07ead2fa.js"
   ]
 }
